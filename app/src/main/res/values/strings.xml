@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Уход за ребенком</string>
+
+    //Обработка ошибок
+    <string name="error_unknown_title">Произошла ошибка</string>
+    <string name="error_unknown_body">Пожалуйста проверьте ваше интернет соединение или попробуйте позднее</string>
+    <string name="error_failed_connection_to_server">Не удалось установить соединение с сервером: \n</string>
+    <string name="error_no_internet_title">Отсутствует интернет соединение</string>
+    <string name="error_no_internet_msg">Пожалуйста проверьте ваше интернет соединение и попробуйте ещё раз</string>
+    <string name="error_auth_wrong_data_title">Авторизация не пройдена</string>
+    <string name="error_auth_wrong_data_msg">Вы ввели неверный логин или пароль. Пожалуйста, проверьте ваши данные и попробуйте ещё раз</string>
+
+
+    <string name="error_su_wrong_data_title">Регистрация не пройдена</string>
+    <string name="error_su_wrong_data_msg">Пожалуйста, проверьте ваши данные и попробуйте ещё раз</string>
+
+
+    //Диалог
+    <string name="dialog_retry">Ещё раз</string>
+    <string name="dialog_exit">Выйти</string>
+    <string name="title_activity_foundation">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string-array name="maleFemale">
+        <item>Выбрать пол</item>
+        <item>Мужской</item>
+        <item>Женский</item>
+    </string-array>
+
+    <string-array name="isPregnantFemale">
+        <item>Вы в положении?</item>
+        <item>Да</item>
+        <item>Нет</item>
+    </string-array>
+
+    <string-array name="isPregnantMale">
+        <item>Ваша супруга(партнер) беременна?</item>
+        <item>Да</item>
+        <item>Нет</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_top">В случае, если Вы являетесь жертвой насилия или вы имеете риск насилия со стороны домодчадцев, Если Вы подвергаетесь домашнему насилию Вы можете обратиться в правоохранительные органы по телефону</string>
+    <string name="middle_second">или в кризисные центры в Вашем регионе. Вы имеете право на получение специальных социальных услуг, защиту и помощь. При обращении в полицию Вам необходимо:</string>
+    <string name="text_bottom">получить направление на прохождение судебно-медицинской экспертизы, на получение защитного предписания и обратиться в суд для защиты ваших конституционных прав и интересов;</string>
+
+</resources>

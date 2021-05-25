@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".content.child.SkipOrAddChildActivity">
+
+    <ImageView
+        android:id="@+id/addChildImBtn"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/child"
+        android:layout_width="wrap_content"
+        android:layout_height="240dp"/>
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="30dp"
+        android:layout_below="@+id/addChildImBtn"
+        android:id="@+id/addChildBtn"
+        android:gravity="center"
+        android:paddingHorizontal="55dp"
+        android:padding="5dp"
+        android:background="@drawable/round_purple_btn"
+        android:text="Добавить ребенка    +"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/khula_bold"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:paddingVertical="5dp"
+
+        android:fontFamily="@font/khula_bold"
+        android:paddingHorizontal="25dp"
+        android:layout_margin="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/white"
+        android:id="@+id/skipChildBtn"
+        android:gravity="center"
+        android:background="@drawable/round_purple_btn"
+        android:text="Пропустить"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".content.child.add.ChildAddActivity">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:background="@drawable/round_purple_btn"
+            android:padding="10dp"
+            android:src="@drawable/child"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"/>
+
+        <TextView
+            android:lineSpacingExtra="-10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/khula_bold"
+            android:text="Добавьте информацию о вашем ребенке!"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <Spinner
+            android:id="@+id/chMaleSpinner"
+            android:entries="@array/maleFemale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/round_grey_edit_text"
+            android:backgroundTint="#33DAD9D9"
+            android:drawableLeft="@drawable/auth_user"
+            android:drawablePadding="23dp"
+            android:fontFamily="@font/khula_light"
+            android:hint="ФИО"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/childNameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/round_grey_edit_text"
+            android:backgroundTint="#33DAD9D9"
+            android:drawablePadding="23dp"
+            android:fontFamily="@font/khula_light"
+            android:hint="Как вы любите его называть?"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/chDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/round_grey_edit_text"
+            android:backgroundTint="#33DAD9D9"
+            android:drawablePadding="23dp"
+            android:fontFamily="@font/khula_light"
+            android:hint="Дата рождения"
+            android:inputType="date"
+            android:paddingLeft="15dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/chD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/round_grey_edit_text"
+            android:backgroundTint="#33DAD9D9"
+            android:drawablePadding="23dp"
+            android:fontFamily="@font/khula_light"
+            android:hint="Хронические заболевания"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+
+
+
+
+        <LinearLayout
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="22dp"
+            android:layout_marginRight="22dp"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:layout_marginLeft="50dp"
+                android:id="@+id/sendChildInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/round_purple_btn"
+                android:fontFamily="@font/khula_bold"
+                android:gravity="center"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="5dp"
+                android:text="Далее"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:background="@color/cc_purple"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <FrameLayout
+        android:id="@+id/childAddLv"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#98000000" />
+
+        <ProgressBar
+            android:padding="2dp"
+            android:background="@drawable/round_orange_btn"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+
+</RelativeLayout>
+
+
+

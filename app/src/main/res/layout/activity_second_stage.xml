@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".signUp.secondPage.PersonalInformationActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:src="@drawable/pregant"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"/>
+
+        <TextView
+            android:lineSpacingExtra="-18dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/khula_bold"
+            android:text="Можете дать дополнительную информацию о себе?"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+
+
+        <Spinner
+            android:id="@+id/input_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/round_grey_edit_text"
+            android:backgroundTint="#33DAD9D9"
+            android:drawableLeft="@drawable/auth_user"
+            android:drawablePadding="23dp"
+            android:fontFamily="@font/khula_light"
+            android:hint="ФИО"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="#99000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/addressEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/round_grey_edit_text"
+            android:backgroundTint="#33DAD9D9"
+            android:drawablePadding="23dp"
+            android:fontFamily="@font/khula_light"
+            android:hint="Адрес прописки"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="#99000000"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/input_hospital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/round_grey_edit_text"
+            android:backgroundTint="#33DAD9D9"
+            android:drawableLeft="@drawable/auth_user"
+            android:drawablePadding="23dp"
+            android:fontFamily="@font/khula_light"
+            android:hint="ФИО"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="#99000000"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/isPregnantSpinner"
+            android:entries="@array/isPregnantFemale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/round_grey_edit_text"
+            android:backgroundTint="#33DAD9D9"
+            android:drawableLeft="@drawable/auth_user"
+            android:drawablePadding="23dp"
+            android:fontFamily="@font/khula_light"
+            android:hint="ФИО"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="#99000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:enabled="false"
+            android:id="@+id/weekCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/round_grey_edit_text"
+            android:backgroundTint="#33DAD9D9"
+            android:drawablePadding="23dp"
+            android:fontFamily="@font/khula_light"
+            android:hint="Ваш срок (в неделях)"
+            android:inputType="number"
+            android:paddingLeft="15dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="#99000000"
+            android:textSize="16sp" />
+
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="22dp"
+            android:layout_marginRight="22dp"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:layout_marginLeft="50dp"
+                android:id="@+id/sendUserInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/round_purple_btn"
+                android:fontFamily="@font/khula_bold"
+                android:gravity="center"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="5dp"
+                android:text="Далее"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/secondLv"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#98000000" />
+
+        <ProgressBar
+            android:padding="2dp"
+            android:background="@drawable/round_orange_btn"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+
+</RelativeLayout>
+
+
+

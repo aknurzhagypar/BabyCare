@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="kz.aknur.newchildcare">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="kz.aknur.newchildcare.ChildCareApp"
+        android:allowBackup="true"
+        android:icon="@drawable/main_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/main_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NewChildcare"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity android:name="kz.aknur.newchildcare.content.child.add.ChildAddActivity" />
+        <activity
+            android:name="kz.aknur.newchildcare.content.child.SkipOrAddChildActivity"
+            android:configChanges="orientation|screenSize" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name="kz.aknur.newchildcare.splash.SplashActivity"
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="kz.aknur.newchildcare.content.FoundationActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="kz.aknur.newchildcare.content.surveys.BaseSurveysActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="kz.aknur.newchildcare.signIn.SignInActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="kz.aknur.newchildcare.signUp.firstPage.SignUpActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="kz.aknur.newchildcare.signUp.secondPage.PersonalInformationActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="kz.aknur.newchildcare.content.home.articles.details.ArticleActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name="kz.aknur.newchildcare.content.child.list.ChildListActivity" />
+        <activity
+            android:name="kz.aknur.newchildcare.content.home.articles.list.ArticleListActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name="kz.aknur.newchildcare.content.hospitals.details.HospitalDetailsActivity" />
+        <activity android:name="kz.aknur.newchildcare.content.hospitals.map.HospitalMapActivity" />
+    </application>
+
+</manifest>

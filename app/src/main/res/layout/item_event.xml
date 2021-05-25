@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_margin="5dp"
+    android:padding="15dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_card_type"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <ImageView
+       app:layout_constraintRight_toLeftOf="@id/event_title"
+       android:id="@+id/stick_color"
+       android:background="@color/cc_purple"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintLeft_toLeftOf="parent"
+       android:layout_width="10dp"
+       android:layout_height="10dp"/>
+
+    <TextView
+        android:textColor="@color/black"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/event_title"
+        app:layout_constraintLeft_toRightOf="@+id/stick_color"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Название события"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintLeft_toRightOf="@+id/stick_color"
+        app:layout_constraintTop_toBottomOf="@+id/event_title"
+        android:text="2012.02.02"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:background="@color/cc_purple"
+        android:text="15:00"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

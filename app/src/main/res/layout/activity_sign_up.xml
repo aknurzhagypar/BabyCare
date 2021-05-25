@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".signUp.firstPage.SignUpActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="17dp">
+
+            <ImageView
+
+                android:layout_width="100dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:src="@drawable/unicef_long" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="74dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="20dp"
+                android:scaleX="1.8"
+                android:scaleY="1.8"
+                android:src="@drawable/logo_iu" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:scaleX="1.9"
+                android:scaleY="1.9"
+                android:src="@drawable/logo_kazlab" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/khula_bold"
+            android:text="Добро пожаловать!"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:fontFamily="@font/khula_light"
+            android:text="Создайте свой аккаунт"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+
+        <Spinner
+            android:id="@+id/maleFemaleSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/round_grey_edit_text"
+            android:backgroundTint="#33DAD9D9"
+            android:drawableLeft="@drawable/auth_user"
+            android:drawablePadding="23dp"
+            android:entries="@array/maleFemale"
+            android:fontFamily="@font/khula_light"
+            android:hint="ФИО"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="#99000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/round_grey_edit_text"
+            android:backgroundTint="#33DAD9D9"
+            android:drawableLeft="@drawable/auth_user"
+            android:drawablePadding="23dp"
+            android:fontFamily="@font/khula_light"
+            android:hint="ФИО"
+            android:inputType="text"
+
+            android:paddingLeft="15dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:maxLength="11"
+            android:id="@+id/inputphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/round_grey_edit_text"
+            android:backgroundTint="#33DAD9D9"
+            android:drawableLeft="@drawable/reg_phone"
+            android:drawablePadding="22dp"
+            android:fontFamily="@font/khula_light"
+            android:hint="Телефон"
+            android:inputType="phone"
+            android:paddingLeft="15dp"
+
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+
+            android:id="@+id/inputEmail_su"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="22dp"
+
+            android:background="@drawable/round_grey_edit_text"
+            android:backgroundTint="#33DAD9D9"
+            android:drawableLeft="@drawable/reg_mail"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/khula_light"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="15dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+
+            android:id="@+id/inputPassword_su"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="22dp"
+
+            android:background="@drawable/round_grey_edit_text"
+            android:backgroundTint="#33DAD9D9"
+            android:drawableLeft="@drawable/auth_key"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/khula_light"
+            android:hint="Пароль"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+
+            android:id="@+id/confirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="22dp"
+
+            android:background="@drawable/round_grey_edit_text"
+            android:backgroundTint="#33DAD9D9"
+            android:drawableLeft="@drawable/auth_key"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/khula_light"
+            android:hint="Повторите пароль"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginBottom="22dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:id="@+id/singIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/khula_light"
+                android:gravity="center"
+                android:text="Уже есть аккаунт?"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/sign_up_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/round_purple_btn"
+                android:fontFamily="@font/khula_bold"
+                android:gravity="center"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="5dp"
+                android:text="Далее"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-5dp"
+        android:src="@drawable/decp" />
+
+    <ImageView
+        android:layout_width="95dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="70dp"
+        android:src="@drawable/deco" />
+
+    <FrameLayout
+        android:id="@+id/signUpLv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#98000000" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/round_orange_btn"
+            android:padding="2dp" />
+
+    </FrameLayout>
+
+</RelativeLayout>
+
+
+
